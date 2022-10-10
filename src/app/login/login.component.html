@@ -1,0 +1,79 @@
+
+<!--<div class="jumbotron"style="text-align:center" >
+<div class="page-wrapper">
+    <div class="authentication-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 p-0 card-right">
+                    <div class="card tab2-card">
+                        <div class="card-body">
+                            <h2>Login</h2>
+                            <form [formGroup]="loginForm" (ngSubmit)="onLoginSubmit()">
+                                login form start 
+                                <div class="tab-pane fade active show" id="account" role="tabpanel"
+                                    aria-labelledby="account-tab">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Username"
+                                            formControlName="username">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" placeholder="Password"
+                                            formControlName="password">
+                                    </div>
+                                    <div class="form-button">
+                                        <button class="btn btn-primary" type="submit">Login</button>
+                                    </div>
+                                </div>
+                              
+                            </form>
+                            <div style="text-align: center; color: red;">
+                                <a routerLink="register">Click Here to Register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div> -->
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_GIg0Vz2aNTzw6SKDL9mP7SGov4OXMJas-Z-IrdtF1Q&s" id="icon" alt="User Icon" />
+    </div>
+
+    <!-- Login Form -->
+    <form [formGroup]="loginForm" (ngSubmit)="onLoginSubmit()">
+      <div class="form-group">
+      <input type="text" id="login" class="fadeIn second" name="login" placeholder="username" [(ngModel)]="regobj.username" formControlName="username" >
+    </div>
+
+    <div class="form-group">
+      <input type="text" id="password" class="fadeIn third" name="login" placeholder="password" [(ngModel)]="regobj.password" formControlName="password">
+    </div>
+   
+    <div class="form-button">
+      <input type="submit" class="fadeIn fourth" value="Log In">
+     
+    </div>
+    </form>
+    <div style="text-align: center; color: rgb(58, 14, 213);">
+        <a routerLink="register">Click Here to Register</a>
+    </div>
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="#">Forgot Password?</a>
+    </div>
+
+  </div>
+</div>
